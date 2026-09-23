@@ -204,5 +204,45 @@ namespace kalanjali_api.Controllers
 
 
 
+
+        //need to check the working of this api 
+
+        [HttpGet]
+        [Route("Getappversionmodel")]
+        public async Task<ActionResult<appversionmodel>> Getappversionmodel()
+        {
+            if (_context.tbl_app_version == null)
+            {
+                return Ok(new
+                {
+                    status = false,
+                    message = "App version not found.",
+                    data = (object?)null
+                });
+            }
+
+            var latestVersion = await _context.tbl_app_version
+                .OrderByDescending(v => v.id)
+                .FirstOrDefaultAsync();
+
+            if (latestVersion == null)
+            {
+                return Ok(new
+                {
+                    status = true,
+                    message = "No data found.",
+                    data = (object?)null
+                });
+            }
+
+            return Ok(new
+            {
+                status = true,
+                message = "Success",
+                data = latestVersion
+            });
+        }
+
+
     }
 }
