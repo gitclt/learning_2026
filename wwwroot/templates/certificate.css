@@ -1,0 +1,183 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ececec;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+.certificate {
+    width: 1123px;
+    height: 794px;
+    margin: 30px auto;
+    background: #ffffff;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0,0,0,.25);
+}
+
+.header {
+    width: 100%;
+    line-height: 0; /* removes the extra gap under inline images */
+}
+
+.header img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.embassy {
+    width: 90px;
+}
+
+.festivalLogo {
+    width: 125px;
+}
+
+.media {
+    width: 150px;
+}
+
+.festivalName {
+    position: absolute;
+    top: 35px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+    .festivalName h1 {
+        font-size: 22px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    .festivalName h2 {
+        margin-top: 10px;
+        font-size: 42px;
+        font-family: Georgia;
+    }
+
+    .festivalName span {
+        color: #ffcc4d;
+    }
+
+.goldCurve {
+    position: absolute;
+    top: 120px;
+    left: -70px;
+    width: 1250px;
+    height: 90px;
+    background: linear-gradient(90deg,#f8e28c,#cfa132,#f6e28b);
+    border-radius: 50%;
+    transform: rotate(-2deg);
+}
+
+.certificateBody {
+    position: absolute;
+    top: 165px;
+    left: 55px;
+    right: 55px;
+    bottom: 150px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgba(0,0,0,.08);
+    padding: 35px 55px;
+}
+
+.flag {
+    text-align: center;
+}
+
+    .flag img {
+        width: 95px;
+    }
+
+.certificateTitle {
+    text-align: center;
+    margin-top: 15px;
+    color: #153f85;
+    font-size: 50px;
+    font-family: Georgia;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.subTitle {
+    text-align: center;
+    margin-top: 6px;
+    color: #c39224;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.presented {
+    text-align: center;
+    margin-top: 35px;
+    color: #555;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.details {
+    width: 100%;
+    margin-top: 55px;
+    border-spacing: 14px 24px;
+}
+
+    .details td {
+        font-size: 20px;
+    }
+
+.label {
+    width: 120px;
+    color: #163e83;
+    font-weight: bold;
+}
+
+.line {
+    border-bottom: 2px solid #444;
+    min-width: 300px;
+    font-size: 21px;
+    padding-bottom: 6px;
+}
+
+.smallLine {
+    border-bottom: 2px solid #444;
+    min-width: 150px;
+    padding-bottom: 6px;
+}
+
+.signatureSection {
+    position: absolute;
+    bottom: 25px;
+    left: 55px;
+    right: 55px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.sign img {
+    height: 40px;
+}
+
+.sign h4 {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.sign p {
+    font-size: 13px;
+}
+
+.sign span {
+    font-size: 11px;
+    color: #555;
+}
